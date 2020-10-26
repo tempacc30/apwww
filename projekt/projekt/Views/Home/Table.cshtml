@@ -1,0 +1,43 @@
+﻿    <table id="table">
+        <thead>
+            <tr>
+                <th scope="col"><p>Kolumna 1</p></th>
+                <th scope="col"><p>Kolumna 2</p></th>
+                <th scope="col"><p>Kolumna 3</p></th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr class="table-shade" onclick="window.location.href='/Home/Film'">
+                <td>
+                    <p>Film 1</p>
+                </td>
+                <td>
+                    <p>https://www.youtube.com/watch?v=BFezcv796mw</p>
+                </td>
+                <td>
+                    <p>Opis</p>
+                </td>
+            </tr>
+            <tr class="table-shade" onclick="window.location.href='/Home/Image'">
+                <td>
+                    <p>Image 1</p>
+                </td>
+                <td>
+                    <p>Opis</p>
+                </td>
+                <td>
+                    <p>-</p>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+
+@section Scripts
+{
+    <script>
+        $(document).ready(function () {
+            $('#table').DataTable();
+        });
+    </script>
+}
